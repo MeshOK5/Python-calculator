@@ -240,6 +240,7 @@ def percent():
       typeRes()
    res.typeRes = "%"
    typeRes()
+   
 def erase():
    res.result = ""
    res.result2 = ""
@@ -275,15 +276,15 @@ def typeRes():
          res.result = del_zero(str(float(res.result) * 100))
       res.result2 = ""
       res.typeRes = ""
+      global a
+      a = True
+      res.whatRes = True
+      res.result2 = ""
    except:
       None
 
 def button_equals():
    typeRes()
-   res.whatRes = True
-   global a
-   a = True
-   res.result2 = ""
 
 buttons_array[0] = Button(font=('Times', 24), command=button_func1)
 buttons_array[0].pack()
