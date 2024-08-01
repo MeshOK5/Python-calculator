@@ -2,13 +2,15 @@ from tkinter import *
 from res import res
 from math import sqrt
 
-def del_zero(strin:str) ->str:
-   if strin[len(strin) - 1:len(strin):] == '0':
-      return strin[0:len(strin) - 2:]
-   else:
-      return strin
 
-win=Tk()
+def del_zero(strin: str) -> str:
+    if strin[len(strin) - 1:len(strin):] == '0':
+        return strin[0:len(strin) - 2:]
+    else:
+        return strin
+
+
+win = Tk()
 win.title("Meshculator")
 win.geometry("320x700")
 win.resizable(False, False)
@@ -35,256 +37,292 @@ result = Label(win, font=('Times', 24))
 
 a = False
 
+
 def button_func1():
-   global result, a
-   if a == True and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "1"
-      result.config(text=res.result)
-   else:
-      res.result2 += "1"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a == True and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "1"
+        result.config(text=res.result)
+    else:
+        res.result2 += "1"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func2():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "2"
-      result.config(text=res.result)
-   else:
-      res.result2 += "2"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "2"
+        result.config(text=res.result)
+    else:
+        res.result2 += "2"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func3():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "3"
-      result.config(text=res.result)
-   else:
-      res.result2 += "3"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "3"
+        result.config(text=res.result)
+    else:
+        res.result2 += "3"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func4():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "4"
-      result.config(text=res.result)
-   else:
-      res.result2 += "4"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "4"
+        result.config(text=res.result)
+    else:
+        res.result2 += "4"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func5():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "5"
-      result.config(text=res.result)
-   else:
-      res.result2 += "5"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "5"
+        result.config(text=res.result)
+    else:
+        res.result2 += "5"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func6():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "6"
-      result.config(text=res.result)
-   else:
-      res.result2 += "6"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "6"
+        result.config(text=res.result)
+    else:
+        res.result2 += "6"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func7():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "7"
-      result.config(text=res.result)
-   else:
-      res.result2 += "7"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "7"
+        result.config(text=res.result)
+    else:
+        res.result2 += "7"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func8():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "8"
-      result.config(text=res.result)
-   else:
-      res.result2 += "8"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "8"
+        result.config(text=res.result)
+    else:
+        res.result2 += "8"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func9():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "9"
-      result.config(text=res.result)
-   else:
-      res.result2 += "9"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "9"
+        result.config(text=res.result)
+    else:
+        res.result2 += "9"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_func0():
-   global result, a
-   if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
-      res.result = ""
-      res.result2 = ""
-      a = False
-   if res.whatRes:
-      res.result += "0"
-      result.config(text=res.result)
-   else:
-      res.result2 += "0"
-      result.config(text=res.result2)
-   result.place(relx=1, rely=1)
-   result.pack()
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "0"
+        result.config(text=res.result)
+    else:
+        res.result2 += "0"
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
+
 
 def button_minus():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.whatRes = False
-   res.typeRes = "-"
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.whatRes = False
+    res.typeRes = "-"
+
 
 def button_plus():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.whatRes = False
-   res.typeRes = "+"
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.whatRes = False
+    res.typeRes = "+"
+
 
 def button_multiply():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.whatRes = False
-   res.typeRes = "*"
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.whatRes = False
+    res.typeRes = "*"
+
 
 def button_divide():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.whatRes = False
-   res.typeRes = "/"
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.whatRes = False
+    res.typeRes = "/"
+
 
 def degree():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.whatRes = False
-   res.typeRes = "^"
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.whatRes = False
+    res.typeRes = "^"
+
 
 def radical():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.typeRes = "√"
-   typeRes()
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.typeRes = "√"
+    typeRes()
+
 
 def percent():
-   if res.result != "" and res.typeRes == "":
-      result.config(text="")
-   elif res.result != "" and res.typeRes != "":
-      typeRes()
-   res.typeRes = "%"
-   typeRes()
-   
+    if res.result != "" and res.typeRes == "":
+        result.config(text="")
+    elif res.result != "" and res.typeRes != "":
+        typeRes()
+    res.typeRes = "%"
+    typeRes()
+
+
 def erase():
-   res.result = ""
-   res.result2 = ""
-   res.whatRes = True
-   result.config(text="")
+    res.result = ""
+    res.result2 = ""
+    res.whatRes = True
+    result.config(text="")
+
 
 def more():
-   win.geometry("600x700")
+    win.geometry("600x700")
+
+def dot():
+    global result, a
+    if a and res.whatRes == True or res.result == "0" or res.result2 == "0":
+        res.result = ""
+        res.result2 = ""
+        a = False
+    if res.whatRes:
+        res.result += "."
+        result.config(text=res.result)
+    else:
+        res.result2 += "."
+        result.config(text=res.result2)
+    result.place(relx=1, rely=1)
+    result.pack()
 
 def typeRes():
-   global result
-   try:
-      if res.typeRes == '+':
-         result.config(text=del_zero(str(float(res.result) + int(res.result2))))
-         res.result = del_zero(str(float(res.result) + int(res.result2)))
-      elif res.typeRes == '-':
-         result.config(text=del_zero(str(float(res.result) - int(res.result2))))
-         res.result = del_zero(str(float(res.result) - int(res.result2)))
-      elif res.typeRes == "*":
-         result.config(text=del_zero(str(float(res.result) * int(res.result2))))
-         res.result = del_zero(str(float(res.result) * int(res.result2)))
-      elif res.typeRes == '/':
-         result.config(text=del_zero(str(float(res.result) / int(res.result2))))
-         res.result = del_zero(str(float(res.result) / int(res.result2)))
-      elif res.typeRes == '^':
-         result.config(text=del_zero(str(float(res.result) ** int(res.result2))))
-         res.result = del_zero(str(float(res.result) ** int(res.result2)))
-      elif res.typeRes == '√':
-         result.config(text=del_zero(str(sqrt(float(res.result)))))
-         res.result = del_zero(str(sqrt(float(res.result))))
-      elif res.typeRes == '%':
-         result.config(text=del_zero(str(float(res.result) * 100)))
-         res.result = del_zero(str(float(res.result) * 100))
-      res.result2 = ""
-      res.typeRes = ""
-      global a
-      a = True
-      res.whatRes = True
-      res.result2 = ""
-   except:
-      None
+    global result
+    try:
+        if res.typeRes == '+':
+            result.config(text=del_zero(str(float(res.result) + float(res.result2))))
+            res.result = del_zero(str(float(res.result) + float(res.result2)))
+        elif res.typeRes == '-':
+            result.config(text=del_zero(str(float(res.result) - float(res.result2))))
+            res.result = del_zero(str(float(res.result) - float(res.result2)))
+        elif res.typeRes == "*":
+            result.config(text=del_zero(str(float(res.result) * float(res.result2))))
+            res.result = del_zero(str(float(res.result) * float(res.result2)))
+        elif res.typeRes == '/':
+            result.config(text=del_zero(str(float(res.result) / float(res.result2))))
+            res.result = del_zero(str(float(res.result) / float(res.result2)))
+        elif res.typeRes == '^':
+            result.config(text=del_zero(str(float(res.result) ** float(res.result2))))
+            res.result = del_zero(str(float(res.result) ** float(res.result2)))
+        elif res.typeRes == '√':
+            result.config(text=del_zero(str(sqrt(float(res.result)))))
+            res.result = del_zero(str(sqrt(float(res.result))))
+        elif res.typeRes == '%':
+            result.config(text=del_zero(str(float(res.result) * 100)))
+            res.result = del_zero(str(float(res.result) * 100))
+        res.result2 = ""
+        res.typeRes = ""
+        global a
+        a = True
+        res.whatRes = True
+        res.result2 = ""
+    except:
+        None
+
 
 def button_equals():
-   typeRes()
+    typeRes()
+
 
 buttons_array[0] = Button(font=('Times', 24), command=button_func1)
 buttons_array[0].pack()
@@ -310,11 +348,11 @@ button_0.pack()
 text = 1
 
 for i in range(3):
-   for r in range(3):
-      buttons_array[text - 1].config(text=f"{text}")
-      buttons_array[text - 1].place(x=100 * (r + 0.4), y=100 * (i + 1))
-      buttons_array[text - 1].config(background="cyan3")
-      text += 1
+    for r in range(3):
+        buttons_array[text - 1].config(text=f"{text}")
+        buttons_array[text - 1].place(x=100 * (r + 0.4), y=100 * (i + 1))
+        buttons_array[text - 1].config(background="cyan3")
+        text += 1
 
 button_0.place(x=100 * 1.4, y=400)
 button_0.config(background="cyan3")
@@ -335,10 +373,10 @@ erase = Button(text="C", font=('Times', 24), command=erase, background="cyan3")
 erase.place(x=100 * 1.4, y=470)
 
 button_equals = Button(text="=", font=('Times', 24), command=button_equals, width=13, background="OrangeRed2")
-button_equals.place(x=100*0.4, y=540)
+button_equals.place(x=100 * 0.4, y=540)
 
 more = Button(text="MORE", font=('Times', 24), command=more, width=13, background="cyan3")
-more.place(x=100*0.4, y=600)
+more.place(x=100 * 0.4, y=600)
 
 degree = Button(text="^", font=('Times', 24), command=degree, background="cyan3")
 degree.place(x=100 * 3.4, y=100)
@@ -348,5 +386,8 @@ radical.place(x=100 * 4.4, y=100)
 
 percent = Button(text="%", font=('Times', 24), command=percent, background="cyan3")
 percent.place(x=100 * 5.4, y=100)
+
+dot = Button(text=".", font=('Times', 24), command=dot, background="cyan3")
+dot.place(x=100 * 3.4, y=200)
 
 win.mainloop()
